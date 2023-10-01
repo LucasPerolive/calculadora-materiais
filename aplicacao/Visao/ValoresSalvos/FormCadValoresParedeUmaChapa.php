@@ -101,6 +101,7 @@ $oc = $classClientesDAO->OpcoesClientes();
                         <tbody>
                             <tr>
                             <?php
+                                $area_parede = $altura * $largura;
                                 $quantidade_chapas = $calculadora->QuantidadeChapasParede($area_parede);
                                 $valor_chapa = ($quantidade_chapas * (float)$valor_chapa);
                                 switch ($tipo_chapa){
