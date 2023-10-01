@@ -9,7 +9,9 @@ echo "</div>";
 
 <?php
 $tipo_chapa = @$_GET['tipo_chapa'];
-$area_parede = @$_GET['area_parede'];
+$altura = @$_GET['altura'];
+$largura = @$_GET['largura'];
+
 $valor_chapa = @$_POST['valor_chapa'];
 $valor_massa = @$_POST['valor_massa'];
 $valor_fita = @$_POST['valor_fita'];
@@ -39,12 +41,12 @@ $oc = $classClientesDAO->OpcoesClientes();
                 <hr>
                 <div class='formulario'>
                     <div class='campos-formulario'>
-                        <label for='pe_direito'>Pé direito:</label>
-                        <input type='number' id='medida1' name='pe_direito' required>
+                        <label for='altura'>Altura:</label>
+                        <input type='number' id='medida1' name='altura' required>
                     </div>
                     <div class='campos-formulario'>
-                        <label for='area_parade'>Área calculada:</label>
-                        <input type='number' id='medida2' name='area_parede' required>
+                        <label for='largura'>Largura:</label>
+                        <input type='number' id='medida2' name='largura' required>
                     </div>
                     <div class='campos-formulario'>
                         <label for='tipo_chapa'>Tipo de chapa:</label>
