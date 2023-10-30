@@ -152,12 +152,15 @@ $oc = $classClientesDAO->OpcoesClientes();
                                 $valor_guias = ($quantidade_guias * (float)$valor_guias);
                                 echo "
                                 <tr>
-                                <td><p>Guias</p></td>
-                                <td>" .  $quantidade_guias . "</td>
-                                <td><input type='number' name='valor_guias'></td>
+                                <td><p>Guias</p></td>";
+                                if ($medida1 == null) {
+                                    echo "<td>0</td>";
+                                } else {
+                                    echo "<td>" . $quantidade_guias . "</td>";
+                                }
+                                echo "<td><input type='number' name='valor_guias'></td>
                                 <td><p>R$" . $valor_guias .  "</p></td>
                                 </tr>";
-
                                 $valor_la = (ceil($area_parede) * (float)$valor_la);
                                 echo "
                                 <tr>
