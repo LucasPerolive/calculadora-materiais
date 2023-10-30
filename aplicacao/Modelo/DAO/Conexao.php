@@ -4,8 +4,8 @@ abstract class Conexao {
 
     public static function getInstance() {
         $dsn = 'mysql:host=localhost;dbname=calculadora_materiais';
-        $user = 'root';
-        $pass = '';
+        $user = 'aplicacao';
+        $pass = '123';
         try {
             $pdo = new PDO($dsn, $user, $pass);
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
