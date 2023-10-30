@@ -6,7 +6,7 @@ class Calculadora {
     }
     //quantidade massa = (área quadrada x 0,5 kg)
     public function QuantidadeMassaForro($area_forro){
-        return ceil(($area_forro * 0.5) / 5);
+        return ($area_forro * 0.5);
     }
     //quantidades fita = (área quadrada x 1,4 m)
     public function QuantidadeFitaForro($area_forro){
@@ -26,10 +26,19 @@ class Calculadora {
     public function QuantidadeFitaParede($area_parede){
         return ceil($area_parede * 1.4 * 2);
     }
+    //quantidade de montantes parede = ((largura da parede / 0.6) + 1)
+    public function QuantidadeMontantes($area_parede){
+        return ceil(($area_parede / 0.6) + 1);
+    }
+    //quantidade de guias parede = ((largura da parede / 3)
+    public function QuantidadeGuias($area_parede){
+        return ceil($area_parede / 3);
+    }
+
 
 
     //quantidade de parafusos = (n° de chapas x 50)
     public function QuantidadeParafuso($quantidade_chapas){
-        return ceil(($quantidade_chapas * 50) / 10);
+        return ceil($quantidade_chapas * 50);
     }
 }

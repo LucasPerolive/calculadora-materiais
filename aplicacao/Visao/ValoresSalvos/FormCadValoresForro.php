@@ -56,7 +56,7 @@ $oc = $classClientesDAO->OpcoesClientes();
 
         <div class="conteudo">
             <h1>Forro trevo aramado H</h1>
-            <p>1 chapa ST BR 12,5mm 600 x 2,00</p>
+            <p>1 chapa ST BR 1,80 x 1,20 - 12,5mm de espessura</p>
             <p>Quantitativo estimado - Forro Aramado "H" - FTA</p>
             <br>
             <hr>
@@ -81,7 +81,7 @@ $oc = $classClientesDAO->OpcoesClientes();
                                 $valor_chapa = ($quantidade_chapas * (float)$valor_chapa);
                                 echo "
                                 <tr>
-                                <td><p>Chapa ST BR 12,5mm 600 x 2,00</p></td>
+                                <td><p>Chapa ST BR 1,80 x 1,20 - 12,5mm de espessura</p></td>
                                 <td>" . $quantidade_chapas . "</td>
                                 <td><input type='number' name='valor_chapa'></td>
                                 <td><p>R$" . $valor_chapa .  "</p></td>
